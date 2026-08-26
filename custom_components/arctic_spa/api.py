@@ -38,6 +38,7 @@ class SpaStatus:
     lights: str
     pump1: str
     pump2: str
+    pump3: str
     spaboy_connected: bool
     spaboy_producing: bool
     ph: float
@@ -60,6 +61,7 @@ class SpaStatus:
             lights=data.get("lights", "off"),
             pump1=data.get("pump1", "off"),
             pump2=data.get("pump2", "off"),
+            pump3=data.get("pump3", "off"),
             spaboy_connected=data.get("spaboy_connected", False),
             spaboy_producing=data.get("spaboy_producing", False),
             ph=data.get("ph", 0.0),
